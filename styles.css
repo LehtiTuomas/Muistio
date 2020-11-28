@@ -1,0 +1,134 @@
+/* Input field for new note */
+
+.input__field {
+    display: flex;
+    margin: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    background-image: url("lime.jpg");
+
+}
+
+.title {
+    margin-top: 10px;
+    font-family: 'Nerko One',
+        cursive;
+    font-size: 4em;
+    color: rgb(107, 126, 23);
+}
+
+.add__note {
+    margin-top: 10px;
+    width: 220px;
+    height: 15px;
+    border: 3px solid #cccccc;
+    border-radius: 2px;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+/* Add New note button*/
+
+.add__btn {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    font-size: 10px;
+    background-color: #998f00;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+
+.add__btn:hover {
+    background-color: #e2d524
+}
+
+.add__btn:active {
+    transform: translateY(1px);
+}
+
+/* Output field for notes */
+
+.output__field {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    margin-top: 10px;
+    width: auto;
+    justify-content: left;
+    padding: 0px;
+    background-color: #e2d524;
+    color: rgb(49, 49, 49);
+    border-radius: 4px;
+}
+
+.output__text {
+    width: 70%;
+    margin: 8px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.on {
+    text-decoration: line-through;
+
+}
+
+/* Mark note done and delete buttons */
+
+.note__btns {
+    margin-left: auto;
+    width: 15%;
+    margin-right: 0px;
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .note__btns {
+        width: 50px;
+    }
+
+    .output__text {
+        width: 60%;
+
+    }
+
+    .note__btns {
+        width: 30%;
+    }
+}
+
+.delete__btn,
+.done__btn {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 2px;
+    font-size: 10px;
+    background-color: #e2d524;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.delete__btn:hover,
+.done__btn:hover {
+    background-color: #998f00
+}
+
+.delete__btn:active,
+.done__btn:active {
+    transform: translateY(1px);
+}
